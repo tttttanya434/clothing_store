@@ -1,0 +1,281 @@
+o	<!DOCTYPE html>
+o	<html lang="ru">
+o	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Магазин одежды</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="css/style.css">
+    </head>
+
+	<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-spa me-2"></i>clothing_store
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Услуги и акции</a></li>
+                        <li><a class="dropdown-item" href="#">Прайс лист</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#reviews">Отзывы</a>
+                </li>
+            </ul>
+            <div class="d-flex">
+                <button class="btn btn-light me-2">
+                    
+                    <i class="fas fa-shopping-cart"> </i>
+                </button>
+                <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Вход
+
+                </button>
+            </div>
+        </div>
+      </div>
+    </nav>
+    
+         <section class="hero-video mb-5">
+             <div class="container d-flex flex-column align-items-center">
+                <h2 class="mb-4 text-center">Как создать подходящий образ?</h2>
+                <div class="ratio ratio-16x9" style="max-width: 800px; width: 100%;">
+                    <iframe src="https://youtube.com/shorts/qKtUWfk38hQ?si=CEzx-sEZ0eI66x-y" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+            
+    <section class="container mb-5">
+  
+    <h2 class="text-center mb-4">Хиты продаж</h2>
+    
+    <div class="d-flex overflow-auto">
+      
+      <div class="card product-card me-3" style="min-width: 300px;">
+        <img src="img/клеш.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Джинсы клеш</h5>
+          <p class="card-text">
+            <span class="badge bg-success mb-2">Хит продаж</span><br>
+            Стильные джинсы клеш — идеальный выбор для тех, кто ценит комфорт и модный ретро-образ. 
+             </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="h5 text-success">3 000 P</span>
+            <button class="btn btn-sm btn-outline-success">
+              <i class="fas fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card product-card me-3" style="min-width: 300px;">
+        <img src="img/худи.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Худи</h5>
+          <p class="card-text">
+            <span class="badge bg-danger mb-2">Акция</span><br>
+            Уютное худи — незаменимый элемент повседневного гардероба. Мягкий материал, удобный крой и стильный дизайн обеспечивают комфорт и свободу движений в любое время года.
+          </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="h5 text-success">5 000 P</span>
+            <button class="btn btn-sm btn-outline-success">
+              <i class="fas fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card product-card me-3" style="min-width: 300px;">
+        <img src="img/футболка.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Футболка</h5>
+          <p class="card-text">
+            <span class="badge bg-danger mb-2">Акция</span><br>
+            Классическая футболка из мягкого хлопка — базовый элемент любого гардероба. Обеспечивает комфорт и свободу движений, легко сочетается с джинсами, шортами и юбками для повседневного образа.
+          </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="h5 text-success">3 000 P</span>
+            <button class="btn btn-sm btn-outline-success">
+              <i class="fas fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container mb-5">
+    
+    <h2 class="text-center mb-4">Наши работы</h2>
+    
+    <div class="row g-3">
+      
+      <div class="col-md-4 col-6">
+        
+        <img src="img/кеды.jpg" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="img/кеды.jpg">
+      </div>
+      <div class="col-md-4 col-6">
+        <img src="img/лонгслив.jpg" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="img/лонгслив.jpg">
+      </div>
+      <div class="col-md-4 col-6">
+        <img src="img/рубашка.jpg" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="img/рубашка.jpg">
+      </div>
+    </div>
+  </div>
+
+
+    <section class="container mb-5"></section>
+    <h2 class="text-center mb-4">Остались вопросы?</h2>
+  
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+  
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Ваше имя</label>
+            <input type="text" class="form-control" id="name" placeholder="Введите ваше имя">
+          </div>
+  
+          <div class="mb-3">
+            <label for="email" class="form-label">Ваш email</label>
+            <input type="email" class="form-control" id="email" placeholder="Введите ваш email">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Ваш телефон</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Введите ваш телефон">
+          </div>
+  
+          <div class="mb-3">
+            <label for="message" class="form-label">Сообщение</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Введите ваше сообщение"></textarea>
+          </div>
+  
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="agreement">
+            <label class="form-check-label" for="agreement">Согласен с условиями обработки персональных данных</label>
+          </div>
+  
+          <button type="submit" class="btn btn-success">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Секция отзывов -->
+<section class="container mb-5" id="reviews">
+  
+    <h2 class="text-center mb-4">Что говорят о нашем салоне</h2>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Анастасия</h5>
+            <div class="text-warning">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="card-text">
+              Отличное качество и быстрая доставка! Очень доволен покупкой.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Второй отзыв (аналогично первому) -->
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Настасья</h5>
+            <div class="text-warning">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p class="card-text">
+              Большой выбор и приятные цены. Обслуживание на высоте!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Подвал сайта -->
+<footer class="bg-dark text-white py-4">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Контакты</h5>
+                <p><i class="fas fa-map-marker-alt me-2"></i>Волгодонск, улица Ленина 42 </p>
+                <p><i class="fas fa-phone me-2"></i>+7 (800) 535-65-65</p>
+
+            </div>
+            <div class="col-md-4">->
+                <h5>Соцсети</h5>
+                <div class="social-links">
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-vk fa-2x"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-telegram fa-2x"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Email для рассылки">
+                    <button class="btn btn-success" type="button">Подписаться</button>
+                </div>
+                <small class="text-muted">Подпишитесь на новости и акции</small>
+            </div>
+        </div>
+    </div>
+</footer><!-- Модальное окно для входа -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Вход</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="loginEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="loginEmail" placeholder="Введите ваш email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="loginPassword" class="form-label">Пароль</label>
+                        <input type="password" class="form-control" id="loginPassword" placeholder="Введите ваш пароль">
+                    </div>
+                    <button type="submit" class="btn btn-success">Войти</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Скрипты Bootstrap и ваш скрипт -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const galleryModal = document.getElementById('galleryModal')
+        galleryModal.addEventListener('show.bs.modal', event => { 
+            const img = event.relatedTarget 
+            const imgSrc = img.getAttribute('data-bs-img') 
+            const modalImage = galleryModal.querySelector('#modalImage') // 
+        modalImage.src = imgSrc 
+        })
+    </script>
+</body> 
+</html>
